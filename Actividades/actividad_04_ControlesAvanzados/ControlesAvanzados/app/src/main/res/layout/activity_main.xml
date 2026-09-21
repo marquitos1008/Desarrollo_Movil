@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8FAFC"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Formulario de Registro"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#0F172A"
+            android:layout_marginBottom="16dp" />
+
+        <!-- 1. SPINNER (Categoría) -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Perfil de Usuario (Spinner):"
+            android:textStyle="bold"
+            android:textColor="#334155" />
+
+        <Spinner
+            android:id="@+id/spCategoria"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- 2. RADIOGROUP / RADIOBUTTON (Turno) -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Turno Preferido (RadioGroup):"
+            android:textStyle="bold"
+            android:textColor="#334155" />
+
+        <RadioGroup
+            android:id="@+id/rgTurno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <RadioButton
+                android:id="@+id/rbMatutino"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Matutino" />
+
+            <RadioButton
+                android:id="@+id/rbVespertino"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vespertino"
+                android:layout_marginStart="16dp" />
+        </RadioGroup>
+
+        <!-- 3. CHECKBOX (Áreas de Interés) -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Áreas de Interés (CheckBox):"
+            android:textStyle="bold"
+            android:textColor="#334155" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <CheckBox
+                android:id="@+id/cbMovil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Móvil" />
+
+            <CheckBox
+                android:id="@+id/cbWeb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Web"
+                android:layout_marginStart="12dp" />
+
+            <CheckBox
+                android:id="@+id/cbBD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bases de Datos"
+                android:layout_marginStart="12dp" />
+        </LinearLayout>
+
+        <!-- 4. SWITCH (Notificaciones) -->
+        <Switch
+            android:id="@+id/swNotificaciones"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Recibir Notificaciones (Switch)"
+            android:textStyle="bold"
+            android:textColor="#334155"
+            android:layout_marginBottom="16dp" />
+
+        <!-- 5. SEEKBAR (Nivel de Experiencia) -->
+        <TextView
+            android:id="@+id/tvNivelValor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nivel de experiencia (SeekBar): 50%"
+            android:textStyle="bold"
+            android:textColor="#334155" />
+
+        <SeekBar
+            android:id="@+id/sbNivel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="100"
+            android:progress="50"
+            android:layout_marginBottom="24dp" />
+
+        <!-- BOTÓN DE PROCESAMIENTO -->
+        <Button
+            android:id="@+id/btnProcesar"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Procesar Datos"
+            android:backgroundTint="#0284C7"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:layout_marginBottom="20dp" />
+
+        <!-- RESUMEN FINAL -->
+        <TextView
+            android:id="@+id/tvResumen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:padding="16dp"
+            android:textSize="15sp"
+            android:textColor="#0F172A"
+            android:elevation="2dp" />
+
+    </LinearLayout>
+</ScrollView>
