@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Acciones principales con íconos siempre visibles en la barra -->
+    <item
+        android:id="@+id/action_buscar"
+        android:icon="@android:drawable/ic_menu_search"
+        android:title="Buscar"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_compartir"
+        android:icon="@android:drawable/ic_menu_share"
+        android:title="Compartir"
+        app:showAsAction="ifRoom" />
+
+    <!-- Opciones desplegables en el menú de tres puntos (overflow) -->
+    <item
+        android:id="@+id/action_ajustes"
+        android:title="Ajustes"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_acerca"
+        android:title="Acerca de"
+        app:showAsAction="never" />
+
+</menu>

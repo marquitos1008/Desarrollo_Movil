@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ToolbarMenusDemo</string>
+
+    <!-- Cadenas para el PopupMenu -->
+    <string name="opcion_contextual_1">Opción Contextual 1</string>
+    <string name="opcion_contextual_2">Opción Contextual 2</string>
+</resources>

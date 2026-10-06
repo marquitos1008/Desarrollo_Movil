@@ -1,0 +1,8 @@
+<resources>
+    <!-- Usar un tema NoActionBar para permitir Toolbar personalizada -->
+    <style name="Theme.ToolbarMenusDemo" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Personalización de colores primarios Material 3 -->
+        <item name="colorPrimary">#0284C7</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+    </style>
+</resources>
